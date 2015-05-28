@@ -177,7 +177,7 @@ IotAssetProvider = function(runtimeUrl1) {
 	   var iotfclient = new IotfClient(options_auth);
 	  
 	   console.log ("org", appkey.substring(2,8));
-	   var resturl = "https://internetofthings.ibmcloud.com/api/v0001/organizations/" + appkey.substring(2,8) + "/devices";
+	   var resturl = "https://"+ appkey.substring(2,8) +".internetofthings.ibmcloud.com/api/v0001/devices";
 	   iotfclient.get(resturl,
 				function(restdata, response) {
 					console.log("response :: ", response.options);
