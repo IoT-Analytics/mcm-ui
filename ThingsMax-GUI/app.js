@@ -7,7 +7,7 @@ var app = express();
 
 // all environments
 // all environments
-var port = (process.env.VCAP_APP_PORT || 3000);
+var port = (process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || 'localhost');
 app.set('port', port);
 app.set('views', __dirname + '/views');
